@@ -14,6 +14,8 @@ class DustBin{
         this.width3 = w3;
         this.height3 = h3;
 
+        this.image = loadImage("dustbingreen.png");
+
         World.add(world, this.body1);
         World.add(world, this.body2);
         World.add(world, this.body3);
@@ -22,11 +24,13 @@ class DustBin{
         var pos1 = this.body1.position;
         var pos2 = this.body2.position;
         var pos3 = this.body3.position;
-        rectMode(CENTER);
+        /*rectMode(CENTER);
         fill("red");
         rect(pos1.x, pos1.y, this.width1, this.height1);
         rect(pos2.x, pos2.y, this.width2, this.height2);
-        rect(pos3.x, pos3.y, this.width3, this.height3);
+        rect(pos3.x, pos3.y, this.width3, this.height3);*/
+        imageMode(TOP);
+        image(this.image, pos3.x, pos3.y - 80, this.width3, this.height3 * 8)
 
 
     }

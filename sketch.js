@@ -20,7 +20,7 @@ function setup() {
 	//Create the Bodies Here.
 	paper = new Paper(50, 480, 20);
 	ground = new Ground(600, 690, 1200, 10);
-	dustbin = new DustBin(780, 650, 920, 650, 850, 690, 20, 100, 20, 100, 140, 20);
+	dustbin = new DustBin(790, 615, 910, 615, 850, 690, 15, 170, 15, 170, 140, 20);
 
 
 
@@ -31,7 +31,7 @@ function setup() {
 
 function draw() {
   rectMode(CENTER);
-  background(0);
+  background(120);
   ground.display();
   if (gamestate === START) {
 	  textSize(50);
